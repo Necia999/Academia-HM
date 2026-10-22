@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notas das Provas</title>
+  <link rel="stylesheet" href="provas.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div id="dados-aluno" class="info-box"></div>
+
+    <form id="form-provas">
+      <h1>Notas das Provas</h1>
+
+      <label for="p1">Primeira prova do professor</label>
+      <input type="number" id="p1" name="prova1" min="0" max="20" step="0.1" required>
+
+      <label for="p2">Segunda prova do professor</label>
+      <input type="number" id="p2" name="prova2" min="0" max="20" step="0.1" required>
+
+      <label for="p3">Prova trimestral</label>
+      <input type="number" id="p3" name="prova3" min="0" max="20" step="0.1" required>
+
+      <button type="submit">Guardar</button>
+      <a href="calculo.de.nota.html">Voltar</a>
+    </form>
+
+    
+    <div id="resultado" class="resultado-box"></div>
+  </div>
+
+
+  <script src="prova.js">
+  </script>
+</body>
+</html>
